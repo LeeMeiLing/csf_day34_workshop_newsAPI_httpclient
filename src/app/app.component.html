@@ -4,7 +4,8 @@
   <table>
     <tr>
       Country: <select name="country" formControlName="country" (change)="getSource()">
-        <option *ngFor="let c of countries" value="{{c}}">{{c}}</option>
+        <!-- <option *ngFor="let c of countries" value="{{c}}">{{c}}</option> -->
+        <option *ngFor="let c of countries" [value]="c">{{c}}</option>
       </select>
     </tr>
     <tr>
@@ -13,7 +14,9 @@
       </select>
     </tr>
     <tr>
-      <button type="submit">Read News</button>
+      <td><button type="submit">Read News</button></td>
+      <td><button types="button" (click)="getNewsByCountry()">Search By Country Only</button></td>
+      <td><button types="button" (click)="getNewsBySource()">Search By Source Only</button></td>
     </tr>
   </table>
 </form>

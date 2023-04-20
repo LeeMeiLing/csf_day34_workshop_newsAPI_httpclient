@@ -8,7 +8,7 @@ export const NEWS_URL = 'https://newsapi.org/v2/top-headlines'
 
 export const SOURCE_URL = 'https://newsapi.org/v2/top-headlines/sources'
 
-export const NEWS_API_KEY = '94b4d80e48ed48cdaa9a7fd9ce350654'
+export const NEWS_API_KEY = 'ADD NEWS API KEY HERE!!!'
 
 export interface Source{
 	
